@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/notedit/gst"
+	"github.com/tomberek/gst"
 )
 
 func main() {

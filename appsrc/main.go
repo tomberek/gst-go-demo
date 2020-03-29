@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/notedit/gst"
+	"github.com/tomberek/gst"
 )
 
 func main() {

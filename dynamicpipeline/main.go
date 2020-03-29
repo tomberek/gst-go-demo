@@ -14,7 +14,8 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/notedit/gst"
+	//"github.com/notedit/gst"
+	"github.com/tomberek/gst"
 )
 
 //export cb_proxy_padadd
@@ -52,7 +53,7 @@ func main() {
 
 	convert.Link(sink)
 
-	source.SetObject("uri", "https://www.freedesktop.org/software/gstreamer-sdk/data/media/sintel_trailer-480p.webm")
+	source.SetObject("uri", "http://dl5.webmfiles.org/big-buck-bunny_trailer.webm")
 	source.SetCallback("pad-added", C.cb_proxy_padadd)
 
 	pipeline.SetState(gst.StatePlaying)
